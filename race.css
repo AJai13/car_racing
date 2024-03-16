@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.car {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  background-color: blue;
+  margin-bottom: 10px;
+}
+
+.track {
+  border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+}
+
+#result {
+  margin-top: 20px;
+}
