@@ -1,2 +1,2 @@
 # car_racing
-Projeto web avançado
+Projeto web avançado: Fórmula 1.
