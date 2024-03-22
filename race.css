@@ -19,3 +19,14 @@ body {
 #result {
   margin-top: 20px;
 }
+
+#bet {
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%; 
+  max-width: 400px; 
+  margin: 10px; 
+}

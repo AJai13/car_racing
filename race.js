@@ -1,4 +1,18 @@
+var playerBalance = 100;
+
 function startRace() {
+    var betAmount = parseInt(document.getElementById('amount').value);
+
+    if (betAmount < 5) {
+        alert("Minimum bet amount is R$5");
+        return;
+    }
+
+    if (playerBalance < betAmount) {
+        alert("Insufficient balance to play this round.");
+        return;
+    }
+
     var carPositions = [0, 0, 0, 0, 0];
     var raceInterval = setInterval(moveCars, 50);
     var winner = null;
@@ -21,9 +35,12 @@ function startRace() {
         var selectedPilot = parseInt(document.getElementById('pilot').value);
         var resultDiv = document.getElementById('result');
         if (selectedPilot === winner) {
+            playerBalance += betAmount * 2;
             resultDiv.textContent = 'Congratulations! You won R$' + (betAmount * 2);
         } else {
-            resultDiv.textContent = 'You lost the bet.';
+            playerBalance -= betAmount;
+            resultDiv.textContent = 'You lost the bet and R$' + betAmount + '.';
         }
+        document.getElementById('player-balance').textContent = 'Your Balance is: R$' + playerBalance;
     }
 }
