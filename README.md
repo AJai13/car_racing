@@ -1,2 +1,2 @@
 # car_racing
-Projeto web avançado: Fórmula 1.
+Advanced Web class project for an F1 racing betting game using HTML, CSS and JS.
