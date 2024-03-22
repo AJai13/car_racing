@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>F1</title>
-    <link rel="stylesheet" href="race.css">
+    <link rel="stylesheet" href="race.css" />
     <script type="text/javascript" src="race.js"></script>
-</head>
-<body>
-  <h1> Bet Racing Game</h1>
-    <div class="track" style="background-color: gray;">
-        <div class="car" id="car1" style="background-color: black;"></div>
-        <div class="car" id="car2" style="background-color: red;"></div>
-        <div class="car" id="car3" style="background-color: purple;"></div>
-        <div class="car" id="car4" style="background-color: yellow;"></div>
-        <div class="car" id="car5" style="background-color: green;"></div>
+  </head>
+  <body>
+    <h1>Bet Racing Game</h1>
+    <div class="track" style="background-color: gray">
+      <div class="car" id="car1" style="background-color: black"></div>
+      <div class="car" id="car2" style="background-color: red"></div>
+      <div class="car" id="car3" style="background-color: purple"></div>
+      <div class="car" id="car4" style="background-color: yellow"></div>
+      <div class="car" id="car5" style="background-color: green"></div>
     </div>
     <div id="bet">
-        <label for="amount">Amount to bet (min. R$5): </label>
-        <input type="number" id="amount" min="5" value="5">
-        <br>
-        <label for="pilot">Select a car: </label>
-        <select id="pilot">
-            <option value="1">Black Car</option>
-            <option value="2">Red Car</option>
-            <option value="3">Purple Car</option>
-            <option value="4">Yellow Car</option>
-            <option value="5">Green Car</option>
-        </select>
-        <br>
-        <button onclick="startRace()">Make a bet</button>
+      <label for="amount">Amount to bet (min. R$5): </label>
+      <input type="number" id="amount" min="5" value="5" />
+      <br />
+      <label for="pilot">Select a car: </label>
+      <select id="pilot">
+        <option value="1">Black Car</option>
+        <option value="2">Red Car</option>
+        <option value="3">Purple Car</option>
+        <option value="4">Yellow Car</option>
+        <option value="5">Green Car</option>
+      </select>
+      <br />
+      <button onclick="startRace()">Make a bet</button>
     </div>
     <div id="player-balance" style="padding: 5px; font-weight: bold">
-        Your Balance: R$100
-      </div>
+      Your Balance: R$100
+    </div>
     <div id="result"></div>
-</body>
+  </body>
 </html>
